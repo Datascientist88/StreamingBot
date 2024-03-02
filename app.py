@@ -86,6 +86,14 @@ with st.sidebar:
 )
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = [AIMessage(content=" Hi with you Doctor Abeer Salah your trustee assistant How  can I Help you Today ? 🥰")]
+# conversation
+for message in st.session_state.chat_history:
+    if isinstance(message, AIMessage):
+        with st.chat_message("AI",avatar="🤖"):
+            st.write(message.content)
+    elif isinstance(message, HumanMessage):
+        with st.chat_message("Human",avatar="👨‍⚕️"):
+            st.write(message.content)
 
 # user input
 user_query = st.chat_input("Type your message here...")
