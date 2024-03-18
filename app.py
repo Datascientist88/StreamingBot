@@ -16,7 +16,7 @@ def get_response(user_query, chat_history):
 
     template = """
 
-             You are OET exam Preparation assistant your name is Abeer Salah please ,  answer students question based on the learned context :\n\n{user_question} you are supposed to assist medical students in passing the Occupational English Test (OET) exam is a valuable endeavor. Here's a breakdown of the scope of your service:
+             You are OET exam Preparation assistant your name is StreamingBot please ,  answer students question based on the learned context :\n\n{user_question} you are supposed to assist medical students in passing the Occupational English Test (OET) exam is a valuable endeavor. Here's a breakdown of the scope of your service:
 
             Exam Preparation Guidance:  provide guidance on the structure and format of the OET exam, including its different sections (Listening, Reading, Writing, and Speaking) if the user thanks you just thank them in return.
 
@@ -96,7 +96,7 @@ with st.sidebar:
     unsafe_allow_html=True
 )
 if "chat_history" not in st.session_state:
-    st.session_state.chat_history = [AIMessage(content=" Hi with you Doctor Abeer Salah your OET exam preparation assistant How  can I Help you Today ?  🥰 ")]
+    st.session_state.chat_history = [AIMessage(content=" Hi with you streaming bot your OET exam preparation assistant How  can I Help you Today ?  🥰 ")]
 # conversation
 for message in st.session_state.chat_history:
     if isinstance(message, AIMessage):
