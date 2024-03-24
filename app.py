@@ -75,7 +75,7 @@ def get_response(user_query, chat_history):
 
 # app layout
 st.set_page_config("OET Exam assistant  ", "🤖")
-st.title("OET EXAM ABEER AI ASSISTANT 👩‍⚕️")
+st.title("OET EXAM AI ASSISTANT 👩‍⚕️")
 with st.sidebar:
     photo_url = "https://i.ibb.co/3k14LmY/Whats-App-Image-2024-02-10-at-9-03-47-AM.jpg"
 
